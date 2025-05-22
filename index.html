@@ -1,323 +1,856 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PrabhatS</title>
+  <meta name="description" content="Welcome to Prabhat's official website. Explore projects, tutorials, and blogs.">
+  <meta name="keywords" content="Prabhat, Web Development, HTML, CSS, JavaScript, Programming, Portfolio">
+  <meta name="author" content="Prabhat">
 
-    <!-- SEO tags -->
-    <meta name="description" content="Prabhat Srivastava Portfolio, made by me, for me." />
-    <meta name="author" content="Prabhat Srivastava">
-    <meta name="keywords" content="Prabhat, Prabhat, Prabhat Srivastava, developer, web developer, front end developer frontend developer, designer" />
-    <meta name="robots" content="index,follow" />
-    <meta name="Googlebot" content="index,follow" />
-    <meta property="og:title" content="Prabhat Srivastava | Portfolio">
-    <meta property="og:description" content="Prabhat Srivastava's Portfolio, made by me, for me." />
-    <meta property="og:type" content="website">
-    <meta name="application-name" content="Prabhat Srivastava | Portfolio" />
-    <meta name="summary" content="A minimalist portfolio made by Prabhat Srivastava">
+  <meta name="robots" content="noindex, nofollow">
 
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Favicons -->
+  <link href="favicons/favicon.png" rel="icon">
+  <!-- <link href="favicons/img-apple-touch-icon.png" rel="apple-touch-icon"> -->
 
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="css/css-bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons-bootstrap-icons.css" rel="stylesheet">
+  <link href="css/aos-aos.css" rel="stylesheet">
+  <link href="css/css-glightbox.min.css" rel="stylesheet">
+  <link href="css/swiper-swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/css-main.css" rel="stylesheet">
 </head>
-<body>
-<!-- Header Portion of the Project -->
-     <header class="header">
-        <a href="#" class="logo"><span>PrabhatS</span></a>
-        <i class='bx bx-menu' id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About </a>
-            <a href="#education">Education</a>
-            <a href="#skill">Skills</a>
-            <a href="#services">Services</a>
-            <a href="#project">Projects</a>
-            <a href="#achievement">Achievements</a>
-            <a href="#contact">Contact Me</a>    
-        </nav>
-    </header>     
-<!-- End Header Portion of the Project -->
+<body class="index-page">
 
-<!-- Home Section Design -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>Hello, I'm Prabhat Srivastava</h1>
-            <div class="change-text">
-                <h3>And I'm</h3>
-                <h3>
-                    <span class="word">Web&nbsp;Developer</span>
-                    <span class="word">Web&nbsp;Designer</span>
-                    <span class="word">Enthusiastic</span>
-                    <span class="word">Dynamic&nbsp;Behaviour</span> 
-                </h3>
-            </div>            
-            <br>
-            <p>Front-end developer is a type of software developer who specializes in creating and designing the user interface (UI) and user experience (UX) of websites and web applications. The primary responsibility of a front-end developer is to ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient.</p><br>
-            <a href="Prabhat Srivastava.pdf" class="btn">Download CV</a>    
-            <div class="social-media">
-                <a href="mailto:srivastavaprabhat522@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
-                <a href="https://www.linkedin.com/in/prabhat-srivastava-a3339a22a"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Prabhatsir31"><i class='bx bxl-github'></i></a>
-                <a href="https://instagram.com/prab_hats28"><i class='bx bxl-instagram-alt'></i></a>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="images/img-my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">PrabhatS</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="mailto:srivastavaprabhat@gmail.com" class="mail" target="_blank" aria-label="Email">
+          <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://github.com/Prabhatsir31" class="github" target="_blank" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.instagram.com/prabhat_codec/" class="instagram" target="_blank" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/prabhat-srivastava-a3339a22a/" class="linkedin" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#achievement"><i class="bi bi-trophy navicon"></i> Achievement</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2>Prabhat Srivastava</h2>
+    <p>I'm <span class="typed" data-typed-items="Developer!, Designer!, Enthusiastic!, Freelancer!">Web Developer</span></p>
+  </div>
+</section>
+<!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I'm a passionate and detail-oriented web developer with experience in building modern, responsive websites and web applications. I specialize in writing clean, efficient code and designing intuitive, user-friendly interfaces. My goal is to turn ideas into impactful digital solutions that offer great performance and usability. With a strong commitment to continuous learning and innovation, I strive to create web experiences that are both visually appealing and technically sound.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="images/img-my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Web Developer &amp; Designer.</h2>
+            <p class="fst-italic py-3">
+              I blend creativity with technical proficiency to craft engaging digital experiences. From front-end design to back-end functionality, I deliver responsive, efficient, and impactful web solutions tailored to meet user and business needs.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 Jan 2001</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="prabhats.netlify.app" style="color: black;">prabhats.netlify.app</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9336856213</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Prayagraj,Uttar Pradesh</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:srivastavaprabhat522@email.com" style="color: black;">srivastavaprabhat@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
+            <p class="py-3">
+              Driven by a love for clean code and innovative design, I develop web applications that are fast, reliable, and user-centric. My approach combines precision, creativity, and a commitment to continuous improvement. Whether it's front-end styling or back-end logic, I enjoy solving problems and delivering solutions that are not only functional but polished and scalable.
+            </p>
+          </div>
         </div>
-        <div class="home-img">
-            <img src="Images/img3.JPG" alt="" height="500">
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <!-- <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+            </div>
+          </div>
         </div>
+      </div>
+
+    </section> -->
+    
+    <!-- /Stats Section -->
+
+  <!-- Skills Section  -->
+    <section id="skills" class="skills section light-background">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Skills</h2>
+        <p>Skilled in front-end and back-end web development, including HTML, CSS, JavaScript, React, and basic knowledge of server-side technologies and databases.</p>
+      </div><!-- End Section Title -->
+  
+      <div class="container1">
+        <div class="skills-content">
+          <div class="side1">
+            <span class="skill">Language & Frameworks</span>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">HTML5, CSS3, JavaScript, React, Node.js, Express.js, MySQL, MongoDB</li>
+              <li class="list-group-item">Bootstrap, Materialize, Tailwind CSS</li>
+              <li class="list-group-item">Git, GitHub</li>
+              <li class="list-group-item">VS Code, Sublime Text</li>
+              <li class="list-group-item">C#, ASP.NET Core, ASP.NET MVC, Entity Framework Core</li>
+              <!-- <li class="list-group-item">Python, Django</li> -->
+              <li class="list-group-item">Java, Spring Boot, Hibernate</li>
+              <li class="list-group-item">C++</li>
+            </ul>
+          </div>
+  
+          <div class="side2">
+            <span class="skill">Tools & Techniques</span>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Version Control (Git, GitHub, Bitbucket)</li>
+              <li class="list-group-item">Design & User Interface (UI/UX)</li>
+              <li class="list-group-item">Frontend Development (HTML5, CSS3, JavaScript, React)</li>
+              <li class="list-group-item">Backend Development (Node.js, Express.js)</li>
+              <li class="list-group-item">Database Management (MySQL, MongoDB)</li>
+              <li class="list-group-item">Operating Systems (Windows, Linux, macOS)</li>
+              <li class="list-group-item">Cloud Computing (AWS, Google Cloud Platform)</li>
+              <!-- <li class="list-group-item">Testing & QA (Jest, Mocha, Selenium)</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-<!-- End Home Section Design -->
 
-<!-- About Section Design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="Images/img2.JPG" alt="" height="560" >
-        </div>
-        <div class="about-content" id="CA">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer!</h3>
-            <p>Hi, My self Prabhat Srivastava. A passionate Front-end Developer having an experience of building a web pages with using HTML | CSS | JAVASCRIPT | JQUERY | BOOTSTRAP. </p>
-            <a href="https://www.linkedin.com/in/prabhat-srivastava-a3339a22a" class="btn">Read More</a>
-        </div>
-    </section>
-<!-- End About Section Design -->
 
-<!-- Education Section Design -->
-    <section class="education" id="education">
-        <h2 class="heading">Jour<span>ney</span></h2>
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education</h3>
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calender"></i> 2021 - 2023</div>
-                            <h3>MCA - University of Allahabad</h3>
-                            <p>I recently given the exam of my master degree(MCA) from University of Allahabad. Year of my batch is 2021 - 2023. Passed with 74.1%.</p>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calender"></i> 2018 - 2021</div>
-                            <h3>BCA - Mahatma Gandhi Kashi VidhyaPith, Vanarasi</h3>
-                            <p>I completed my bachelor degree(BCA) from Mahatma Gandhi Kashi VidhyaPith, Vanarasi. Year of my batch is 2018 - 2021. Passed with CGPA - 6.9.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="education-column">
-                <h3 class="title">Experience  </h3>
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calender"></i> 2023</div>
-                            <h3>Internship - CodSoft</h3>
-                            <p>It is a "Web Development" internship position with "CodSoft". I am exited to join the team of "CodSoft". The duration of the internship will be of 4 weeks.</p>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calender"></i> 2023</div>
-                            <h3>Assignment - HaxByte</h3>
-                            <p>I am thankful of "HaxByte" to given a chance to prove myself to give this assignment. I am enjoyed to work with "HaxByte". The duration of the assignment is 1 week.</p>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- End Education Section Design -->
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
 
-<!-- Skill Section Design -->
-    <section class="skill" id="skill">
-        <h2 class="heading">Professional<span> Skills</span></h2>
-        <div class="container">
-            <div class="box">
-              <div class="chart" data-percent="82" data-scale-color="#ffb400">82%</div>
-              <h2>HTML5</h2>
-            </div>
-            <div class="box">
-              <div class="chart" data-percent="76" data-scale-color="#ffb400">76%</div>
-              <h2>CSS3</h2>
-            </div>
-            <div class="box">
-              <div class="chart" data-percent="45" data-scale-color="#ffb400">45%</div>
-              <h2>Javascript</h2>
-            </div>
-            <div class="box">
-              <div class="chart" data-percent="75" data-scale-color="#ffb400">75%</div>
-              <h2>BOOTSTRAP</h2>
-            </div>
-            <div class="box">
-              <div class="chart" data-percent="35" data-scale-color="#ffb400" style="margin-top: -50px;">35%</div>
-              <h2>JQUERY</h2>
-            </div>
-            <div class="box">
-              <div class="chart" data-percent="83" data-scale-color="#ffb400" style="margin-top: -50px;">83%</div>
-              <h2>CORE JAVA</h2>
-            </div>
-            <div class="box">
-              <div class="chart" data-percent="55" data-scale-color="#ffb400" style="margin-top: -50px;">55%</div>
-              <h2>PYTHON</h2>
-            </div>
-            <div class="box">
-              <div class="chart" data-percent="25" data-scale-color="#ffb400" style="margin-top: -50px;">25%</div>
-              <h2>Photoshop</h2>
-            </div>
-        </div>            
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js'></script>
-        <script  src="./script.js"></script>     
-    </section>
-<!-- End Skill Section Design -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume <a href=""><i class="bi bi-file-earmark-person-fill"></i></a></h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>End Section Title -->
 
-<!-- Services Section Design -->    
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <a href="#"><i class='bx bx-code-alt' id="pp"></i></a>
-                <h3>Web Developer</h3>
-                <p>Front-end developer is a type of software developer who specializes in creating and designing the user interface (UI) and user experience (UX) of websites and web applications. The primary responsibility of a front-end developer is to ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient.</p>
-                <a href="https://www.freecodecamp.org/" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
-                <a href="#"><i class='bx bxs-paint' id="pp"></i></a>
-                <h3>Graphics Design</h3>
-                <p>Graphics design is a creative displine that combines visual elements such as images, typography, colors, and layout to communicate messages, ideas, or information visually. It emcompasses various mediums, including print, digital, and multimedia, produce visually appealing and effective designs for purposes like branding, advertising, web design, and more.</p>
-                <a href="https://www.canva.com/templates/s/graphic-design/" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
-                <a href="#"><i class='bx bx-bar-chart-alt' id="pp"></i></a>
-                <h3>Digital Marketing</h3>
-                <p>Digital marketing refers to the strategic use of online channels and technologies to promote products, services, or brands to a targetes audience. It encompasses a wide range of activities aimed at reaching potential customers through digitally, websites, social-media, search engines, and mobile apps. Digital marketers employ various techniques such as SEO.</p>
-                <a href="https://www.oxedent.com/?utm_source=iide_digi_india" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
-<!-- End Services Section Design -->
+      <div class="container">
 
-<!-- Project Section Design -->
-    <section class="project" id="project">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="Images/fb.png" alt="">
-                <div class="project-layer">
-                    <h4>Facebook Old Login Page</h4>
-                    <p>"Facebook old login page refers to the previous design of the login screen for accessing Facebook accounts."</p>
-                    <a href="https://github.com/Prabhatsir31/Facebook-Old-Login-Page"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="Images/form.png" alt="">
-                <div class="project-layer">
-                    <h4>Form With Validation</h4>
-                    <p>A form with validation is a digital input interface that ensures data entered by users meets specified criteria, helping prevent errors and ensuring accurate information submission.</p>
-                    <a href="https://github.com/Prabhatsir31/Form-with-validation"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="Images/pass.png" alt="">
-                <div class="project-layer">
-                    <h4>Password Generator</h4>
-                    <p>A password generator is a software tool that creates random and complex passwords to enhance online security and protect accounts from unauthorized access.</p>
-                    <a href="https://github.com/Prabhatsir31/Password-Generator"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="Images/calender.png" alt="">
-                <div class="project-layer">
-                    <h4>Calender</h4>
-                    <p>A calendar is a visual representation of days, weeks, and months used to organize and track events and appointments.</p>
-                    <a href="https://github.com/Prabhatsir31/Amazing-Calender"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="Images/laravel.png" alt="">
-                <div class="project-layer">
-                    <h4>Laravel Website Prototype</h4>
-                    <p>A Laravel website is a web application developed using the Laravel framework, known for its elegant syntax and robust features.</p>
-                    <a href="https://github.com/Prabhatsir31/Laravel"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="Images/age.png" alt="">
-                <div class="project-layer">
-                    <h4>Age Calculator</h4>
-                    <p>An age calculator is a tool that determines a person's age based on their birthdate and the current date.</p>
-                    <a href="https://github.com/Prabhatsir31/Age-Calculator"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- End Project Section Design -->
+        <div class="row">
 
-<!-- Achievement Section Design -->    
-    <section class="achievement" id="achievement">
-        <h2 class="heading">Achiev<span>ement</span></h2>
-        <div class="achievement-container">
-            <div class="achievement-box">
-                <img src="Images/git.png" alt="">
-                <div class="project-layer">
-                    <h4>Introduction to Git and Github</h4>
-                </div>
-            </div>
-            <div class="achievement-box">
-                <img src="Images/sec.png" alt="">
-                <div class="project-layer">
-                    <h4>Security and Privacy for Big Data</h4>
-                </div>
-            </div>
-            <div class="achievement-box">
-                <img src="Images/Di.png" alt="">
-                <div class="project-layer">
-                    <h4>Digital tools & Ai for Content Writing</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- End Achievement Section Design -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
 
-<!-- Contact Section Design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <br>
-        <div class="imgBx">
-            <img src="images/img3.JPG">
-        </div>
-        <h3>Front-end Developer</h3>
-        <p style="color: lightgray;">Discuss a project and help the lerner's to slove the query.</p>
-        <p style="font-size: 2rem;">HTML | HTML5 | CSS | CSS3 | JAVASCRIPT | JQUERY | BOOTSTRAP | CORE JAVA | PYTHON</p>
-                <p><i class='bx bxs-location-plus'></i> Prayagraj, Uttar Pradesh</p>
-        <p>Mail To: <a href="mailto:srivastavaprabhat522@gmail.com" target="_blank" style="color: white;">srivastavaprabhat522@gmail.com</a></p>
-        <div class="social-media">
-            <a href="mailto:srivastavaprabhat522@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
-            <a href="https://www.linkedin.com/in/prabhat-srivastava-a3339a22a"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Prabhatsir31"><i class='bx bxl-github'></i></a>
-            <a href="https://instagram.com/prab_hats28"><i class='bx bxl-instagram-alt' ></i></a>
-        </div>
-    </section>
-<!-- End Contact Section Design -->
+            <div class="resume-item pb-0">
+              <h4>Prabhat Srivastava</h4>
+              <p><em>I'm a web developer passionate about creating websites and applications that are easy to use and visually appealing. With a focus on writing clean, efficient code, I design simple yet effective solutions to meet the needs of users. My goal is to build fast, responsive websites that provide a seamless experience across all devices. I’m always learning new technologies and techniques to improve my skills and create better web experiences for users.</em></p>
+              <ul>
+                <li>Prayagraj, Uttar Pradesh</li>
+                <li>(+91) 9336856213</li>
+                <li><a href="mailto:srivastavaprabhat@gmail.com" style="color: black;">srivastavaprabhat@gmail.com</a></li>
+              </ul>
+            </div><!-- Edn Resume Item -->
 
-<!-- Footer Section Design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by PrabhatS | All Rights Reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-        </div>
-    </footer>
-<!-- End Footer Section Design -->
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Computer Applications (MCA)</h4>
+              <h5>2021 - 2023</h5>
+              <p><em>University of Allahabad, Prayagraj, Uttar Pradesh</em></p>
+              <p>Completed a comprehensive curriculum focused on computer science, software development, and data structures. Gained expertise in programming languages, database management, and web development, preparing for a career in the tech industry.</p>
+            </div>
+            <!-- Edn Resume Item -->
 
-<!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-<!-- typed js  -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Applications (BCA)</h4>
+              <h5>2018 - 2021</h5>
+              <p><em>Mahatma Gandhi Kashi Vidyapith, Varanasi, Uttar Pradesh</em></p>
+              <p>Studied foundational concepts in computer science, programming, and software development. Gained hands-on experience with various programming languages and tools, preparing for a career in web development and IT solutions.</p>
+            </div>
+            <!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+          
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>Mar 2023 - Sep 2024</h5>
+              <p><em>Vineeta Hospital Pvt. Ltd, Prayagraj</em></p>
+              <ul>
+                <li>Designed and developed responsive websites and internal applications to enhance hospital operations and patient engagement.</li>
+                <li>Led a team of 7 members in front-end and back-end development tasks, ensuring timely and high-quality deliverables.</li>
+                <li>Maintained and optimized hospital's online presence, improving website speed, UI consistency, and SEO performance.</li>
+                <li>Implemented secure form-based systems for appointments, patient data, and report access using modern web technologies.</li>
+              </ul>
+            </div>
+          
+            <div class="resume-item">
+              <h4>IT Executive</h4>
+              <h5>Jun 2023 - Aug 2024</h5>
+              <p><em>Adour Super Science, Worli, Mumbai</em></p>
+              <ul>
+                <li>Worked closely with marketing and development teams to build visually appealing and functional digital materials.</li>
+                <li>Managed 5+ IT support and development tasks under tight deadlines, ensuring continuous workflow and minimal downtime.</li>
+                <li>Advised clients on digital solutions best suited for their business needs, aligning technology with branding goals.</li>
+                <li>Created impactful presentations and visual proposals, improving client understanding and project approval rates.</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="images/travel.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>Travel-Booking-System</h4>
+                  <p>Developed a complete travel booking system allowing users to search, book, and manage travel plans, with responsive UI and integrated form handling.</p>
+                  <a href="images/travel.png" title="Travel-Booking-System" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Travel-Booking-System" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="images/headphone.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>E-Commerce of Headphone</h4>
+                  <p>A Bootstrap-based responsive e-commerce template for headphone products, featuring product listings, a cart layout, and elegant UI components.</p>
+                  <a href="images/headphone.png" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Bootstrap-Projects/tree/main/05_E-Commerce%20of%20Headphones" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="images/gem.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>Google-Gemini</h4>
+                  <p>A creative UI clone inspired by Google Gemini, built to practice layout design, component structuring, and interactivity using modern web technologies.</p>
+                  <a href="images/gem.png" title="Google-Gemini" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Google-Gemini" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="images/hotel.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>Hotel Web</h4>
+                  <p>Responsive hotel website template built with Bootstrap, featuring room listings, image galleries, and booking contact forms for a complete user experience.</p>
+                  <a href="images/hotel.png" title="Hotel Web" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Bootstrap-Projects/tree/main/11_Hotel%20Web" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="images/jewellery.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>E-Commerce of Jewellery</h4>
+                  <p>An elegant jewelry store layout built with Bootstrap, showcasing product categories, high-quality images, and intuitive navigation for online shopping.</p>
+                  <a href="images/jewellery.png" title="E-Commerce of Jewellery" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Bootstrap-Projects/tree/main/06_E-Commerce%20of%20Jewellery" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="images/qr.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>QR Generator</h4>
+                  <p>A JavaScript project that generates QR codes dynamically based on user input using an external API, with downloadable QR image support.</p>
+                  <a href="images/qr.png" title="QR Generator" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Javascript-Projects/tree/main/11_QR%20Generator" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="images/music.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>Music Player</h4>
+                  <p>Responsive music player interface using Bootstrap, featuring play/pause controls, song list management, and modern UI design.</p>
+                  <a href="images/music.png" title="Music Player" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Bootstrap-Projects/tree/main/16_Music%20Player" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="images/clothes.png" class="img-fluid" alt="" style="height: 286px;">
+                <div class="portfolio-info">
+                  <h4>E-Commerce of Clothes</h4>
+                  <p>A Bootstrap-based online clothing store layout with responsive design, product cards, and a user-friendly interface for browsing and shopping.</p>
+                  <a href="images/clothes.png" title="E-Commerce of Clothes" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Prabhatsir31/Bootstrap-Projects/tree/main/03_E-Commerce" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Explore a wide range of professional web development services tailored to meet your business goals. From responsive websites and intuitive UI/UX designs to secure backend systems, e-commerce platforms, SEO optimization, and hosting setup — everything is crafted to boost performance, engagement, and long-term digital success.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-window"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Website Development</a></h4>
+              <p class="description">Building responsive websites designed to meet client needs, ensuring smooth performance, scalability, and an engaging user experience for all devices and screen sizes.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Front-End Development</a></h4>
+              <p class="description">Crafting visually appealing and interactive user interfaces with HTML, CSS, and JavaScript, ensuring a seamless and engaging user experience across all platforms and devices.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-hdd-network"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Back-End Development</a></h4>
+              <p class="description">Developing the server-side logic and database management, ensuring secure data handling, fast processing, and smooth integration with front-end technologies for efficient website performance.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-bag-check"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">E-Commerce Development</a></h4>
+              <p class="description">Designing and building fully functional e-commerce websites with secure payment gateways, inventory management, and custom features, enabling businesses to sell products effectively online.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Website Maintenance</a></h4>
+              <p class="description">Providing regular website updates, bug fixes, security patches, and performance improvements to ensure websites run smoothly, stay secure, and remain up-to-date with the latest trends.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">UI/UX Design</a></h4>
+              <p class="description">Designing intuitive and visually appealing interfaces with a focus on usability, ensuring users have an optimal experience navigating websites and applications across all devices.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart-line"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">SEO Optimization</a></h4>
+              <p class="description">Implementing search engine optimization strategies to increase website visibility, improve search rankings, and attract more traffic by optimizing content, code, and structure.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-cloud-upload"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link ">Web Hosting Setup</a></h4>
+              <p class="description">Assisting clients in choosing and configuring reliable web hosting solutions, ensuring fast, secure, and scalable hosting to support website growth and performance.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Achievement Section -->
+
+    <section id="achievement" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Achievements</h2>
+        <p>A showcase of accomplishments and milestones in my development journey.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="images/css certificate_page-0001.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>CSS Certificate</h4>
+                  <p>Certified in CSS by HackerRank for foundational and practical styling skills.</p>
+                  <a href="images/css certificate_page-0001.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.hackerrank.com/certificates/ea106683d786" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="images/java_basic certificate_page-0001.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>JAVA Certificate</h4>
+                  <p>Certified in Java (Basic) by HackerRank for demonstrating foundational Java programming skills.</p>
+                  <a href="images/java_basic certificate_page-0001.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.hackerrank.com/certificates/0901a36901e5" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="images/git.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Introduction to Git and Github</h4>
+                  <p>Completed Coursera's course on Introduction to Git and GitHub by Google.</p>
+                  <a href="images/git.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://coursera.org/share/6aa3004679c913fe230ea658f8d2cedfx" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="images/sec.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Security and Privacy for Big Data</h4>
+                  <p>Completed Coursera's course on Big Data Security and Privacy by the University of Colorado.</p>
+                  <a href="images/sec.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://coursera.org/share/ec98ad710ef52f345a794e558e8a219a" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="images/Di.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Digital tools & Ai for Content Writing</h4>
+                  <p>Completed HackerRank's module on AI-assisted digital tools for content writing.</p>
+                  <a href="images/Di.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.hackerrank.com/certificates/ea106683d786" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>CSS Certificate</h4>
+                  <p>Certified in CSS by HackerRank for foundational and practical styling skills.</p>
+                  <a href="images/css certificate_page-0001.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.hackerrank.com/certificates/ea106683d786" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+          </div><!-- End Achievement Container -->
+      </div>
+    </section>    
+
+    <!-- /Achievement Section -->
+
+
+
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>See what our clients have to say about our web development and design services.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 1
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Working with this team was fantastic! They delivered a high-quality website on time and were very professional throughout the process.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="images/testimonials-testimonials-1.jpeg" class="testimonial-img" alt="">
+            <h3>Rishabh Tripathi</h3>
+            <h4>Web Developer</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The design was sleek, the performance was flawless, and they were always responsive to our feedback. Highly recommended!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="images/testimonials-testimonials-2.jpeg" class="testimonial-img" alt="">
+            <h3>Saurabh Dcruz</h3>
+            <h4>Senior Software Engineer</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The team exceeded our expectations by creating a user-friendly and visually stunning website. It’s been a great experience!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="images/testimonials-testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Rohit Bhoir</h3>
+            <h4>Backend Developer</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>I loved their attention to detail and creativity. The final product reflects our brand perfectly. Great work!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="images/testimonials-testimonials-4.jpeg" class="testimonial-img" alt="">
+            <h3>Vivek Maurya</h3>
+            <h4>Android Developer</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Efficient, skilled, and incredibly supportive — our new website is beautiful and performs beyond our expectations.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="images/testimonials-testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>Vaibhav Thorat</h3>
+            <h4>Software Engineer</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for any web development services or collaboration.</p>
+      </div>
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+    
+          <!-- Contact Info -->
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Shantipuram, Prayagraj, Uttar Pradesh, 211013</p>
+                </div>
+              </div>
+    
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+91 9336856213</p>
+                </div>
+              </div>
+    
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p><a href="mailto:srivastavaprabhat@gmail.com" style="color:black;">srivastavaprabhat@gmail.com</a></p>
+                </div>
+              </div>
+    
+              <!-- Google Map -->
+              <iframe src="https://www.google.com/maps?q=Shantipuram%20Prayagraj&output=embed"
+                      frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+    
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+    
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" name="email" id="email-field" class="form-control" required>
+                </div>
+    
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" name="subject" id="subject-field" class="form-control" required>
+                </div>
+    
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea name="message" id="message-field" class="form-control" rows="10" required></textarea>
+                </div>
+    
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>
+    
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+    
+        </div>
+      </div>
+    </section>  
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>&copy; <span>Copyright</span> <strong class="px-1 sitename">PrabhatS-2025</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Made by <a href="iPortfolio.html">PrabhatS</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script data-cfasync="false" src="js/cloudflare-static-email-decode.min.js"></script><script src="js/js-bootstrap.bundle.min.js"></script>
+  <script src="js/php-email-form-validate.js"></script>
+  <script src="js/aos-aos.js"></script>
+  <script src="js/typed.js-typed.umd.js"></script>
+  <script src="js/purecounter-purecounter_vanilla.js"></script>
+  <script src="js/waypoints-noframework.waypoints.js"></script>
+  <script src="js/js-glightbox.min.js"></script>
+  <script src="js/imagesloaded-imagesloaded.pkgd.min.js"></script>
+  <script src="js/isotope-layout-isotope.pkgd.min.js"></script>
+  <script src="js/swiper-swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/js-main.js"></script>
+
 </body>
+
 </html>
